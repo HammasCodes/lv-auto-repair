@@ -43,10 +43,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${barlow.variable} ${inter.variable} antialiased`}>
-        {children}
-      </body>
+    <html lang="en" className={`${barlow.variable} ${inter.variable}`}>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
